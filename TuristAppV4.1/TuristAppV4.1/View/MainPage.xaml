@@ -1,13 +1,71 @@
 ﻿<Page
-    x:Class="TuristAppV4._1.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:TuristAppV4._1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">   
+    xmlns:ViewModel="using:TuristAppV4.ViewModel"
+    x:Class="TuristAppV4._1.MainPage"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Icon="View" Label="Vælg restaurant"/>
+            <AppBarButton Icon="Add" Label="Tilføj restaurant"/>
+            <AppBarButton Icon="Delete" Label="Slet restaurant"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Page.DataContext>
+        <ViewModel:MainViewModel/>
+    </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="190*"/>
+            <RowDefinition Height="577*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="415*"/>
+            <ColumnDefinition Width="415*"/>
+            <ColumnDefinition Width="415*"/>
+            <ColumnDefinition Width="60*"/>
+        </Grid.ColumnDefinitions>
+        <GridView Margin="0 0 0 80" Grid.Column="1" Background="gray" Grid.Row="1">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="Overskrift"/>
+                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="Billede" Stretch="None" />
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <GridView Margin="20 0 20 80" Background="Gray" Grid.Column="2" Grid.Row="1">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="Overskrift"/>
+                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="Billede" Stretch="None" />
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <GridView Margin="0 0 0 80" Background="Gray" Grid.Column="3" Grid.Row="1">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="Overskrift"/>
+                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="Billede" Stretch="None" />
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <TextBlock Height="70" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="55" Foreground="white" HorizontalAlignment="Left" Grid.Column="1">
+			<Run Text="Eat Out"/>
+			<Run Text=" - "/>
+			<Run FontStyle="Italic" FontSize="45" Text="Roskilde"/>
+        </TextBlock>
+        <ListView Background="white" Grid.Column="1" Height="60" Margin="0,100,0,0" Grid.ColumnSpan="3"/>
     </Grid>
 </Page>
