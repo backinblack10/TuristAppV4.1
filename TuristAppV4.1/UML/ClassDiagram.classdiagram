@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b3f030e7-38f1-4544-b08a-47cb0a1ca853" name="ClassDiagram" linkedPackageId="cadc5bfa-bc21-453b-bad5-12a6b9e6bfb0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="2bd54a8b-12bb-4c47-bfc2-cd615eb3774b" name="View">
+        <elementDefinition Id="ff337ca9-adee-46a6-a313-d47450087747" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="3cf250c0-3571-41bc-997a-36405e4e5bf1" name="MainPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e777bc3d-856b-4c02-9c12-dd505a494ca2" />
+              <targetEnds>
+                <association Id="125bc1e7-18ee-41cf-aec0-9af7880ca549" isDerived="false" sourceEndRoleName="MainPage" targetEndRoleName="MainViewmodel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="25b057cf-61bc-44ef-b75d-df1ca4653b43" LastKnownName="MainViewmodel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b214b5a0-9d96-4922-9320-4e2483352188" name="MainPage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="958362bc-d07a-4aac-93c7-7e5ff7032706" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="cb522953-c7ff-4a42-a0d9-c4469fbab851" name="MainViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="60011a8a-86d6-4d12-adab-d98625a9ead6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="934ebc81-ee30-424c-b701-e0a7b111ad83" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d2b90f74-eaec-4c7a-9b20-a1846465d8de" name="Restaurant" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0a88d620-091a-438f-8962-5319c7eb5b44" />
+              <targetEnds>
+                <association Id="ab82c243-2a52-44f0-bd9a-ab9c93a9c19e" isDerived="false" sourceEndRoleName="Restaurant" targetEndRoleName="MainViewmodel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="25b057cf-61bc-44ef-b75d-df1ca4653b43" LastKnownName="MainViewmodel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4a846a93-05b3-4059-b7b4-3f77553ccf46" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="c5399637-0ec8-4e85-81f0-5967e7edf846" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="57251115-253d-4811-b7b1-4e5b8239347b" name="MainViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f2392eea-9ee6-49cd-b7df-a8799386e5be" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d647c42c-21b8-44ad-8dc8-f78b9dd5cfe6" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="555604f0-fe7d-41c0-b0fb-418c987fbbf3" name="OpretRestaurant" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6128b16c-03c2-4d50-986f-a94f2184a488" />
+              <targetEnds>
+                <association Id="81c45993-00cb-492b-99f4-d1950e6474c4" isDerived="false" sourceEndRoleName="OpretRestaurant" targetEndRoleName="MainViewmodel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="25b057cf-61bc-44ef-b75d-df1ca4653b43" LastKnownName="MainViewmodel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="456a391a-1596-4fa0-b762-7dbc213769f3" name="OpretRestaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="a8b80301-d792-48ae-80e5-f75135f56929" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8bbd347e-a780-497b-a4fb-b1326702b0a1" name="MainViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="c53501c5-a252-403f-b5a6-b3e2839cd63e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="9582c7d5-b162-47fd-bec6-1680f8b055c5" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="779e4fd6-dfb8-483b-8b0a-c9dab8fb7368" name="Viewmodel">
+        <elementDefinition Id="7cd85847-22f7-4d66-a9f6-857de0632377" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="25b057cf-61bc-44ef-b75d-df1ca4653b43" name="MainViewmodel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5f6ce30a-d5b3-42a0-aaa2-c4b61bbc29ce" />
+              <targetEnds>
+                <association Id="b83d7c28-638a-4a20-b501-8fa6a830f9a2" isDerived="false" sourceEndRoleName="MainViewmodel" targetEndRoleName="OpretRestaurantHandler" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="541fe3bd-d1d8-4500-a8c4-f929cef9f98c" LastKnownName="OpretRestaurantHandler" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="bade27da-60d8-4253-ba02-62afbb946926" name="MainViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="1862761f-7251-4f66-bf72-3a8a91ee9db3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e0bb698e-308c-407b-b728-7592b7a6565a" name="OpretRestaurantHandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="2fc841a9-ba30-44fb-b767-e4d6c2ecc975" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="28e531f3-27b1-4a03-bdd4-75603ad56cbe" />
+                </association>
+                <association Id="cc8c6b57-75e4-4e94-a9aa-4d8449254ec2" isDerived="false" sourceEndRoleName="MainViewmodel" targetEndRoleName="RelayCommand" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d10e7b1e-34ff-46d8-90e2-672b14f8b4e0" LastKnownName="RelayCommand" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7d4c3b32-8917-478b-977f-dac8ab2d794b" name="MainViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="28283367-9c49-4da4-8e10-78756265b775" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c0166f39-8ce0-4c5c-bad8-e417a24f4fc8" name="RelayCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="60392359-0047-455f-8f95-17c9f8c2c211" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="670daf73-7310-484c-bb67-b0d731f9aae9" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="49ab007b-077a-4b75-97b3-82fb5f5b4573" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9ff1b69-6b2d-4f7f-a947-c44d6a0e9bac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a5f105a7-e113-4427-8443-83bdac049ae9" LastKnownName="ObserableCollection" />
+                  </type_NamedElement>
+                </property>
+                <property Id="ec92dfce-4ac6-4796-96d9-02d6bf651e5a" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a39e85b7-5b5f-4fbb-9e5b-1ac452bccda8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a5f105a7-e113-4427-8443-83bdac049ae9" LastKnownName="ObserableCollection" />
+                  </type_NamedElement>
+                </property>
+                <property Id="866fa862-8bbc-4fd0-98df-3c63b387f8c5" name="SelectedRestaurant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4646cefe-b19a-4890-8d7f-c3475a0e8ef8" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="eb4fc2cc-9b9b-4570-af22-3fb47749199e" name="SletRestaurant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4e8c3f2b-292c-4bc1-af26-04de74fcbf04" />
+                </operation>
+                <operation Id="412dbe25-2112-4b94-8e2c-c321976aa85e" name="Restaurant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fa974c35-d1b4-4113-9029-b7baebdf3227" />
+                </operation>
+                <operation Id="dc3de838-4f5b-490b-9027-3eb84d71d73b" name="SelectedRestaurant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5c44bcdd-1911-4e1b-ac1a-55cc9c59bf2a" />
+                </operation>
+                <operation Id="ae38990b-7d56-41dc-a030-efe2aea6eabe" name="Kategori" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ae74de17-2056-48e9-a166-7057507390da" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d10e7b1e-34ff-46d8-90e2-672b14f8b4e0" name="RelayCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="30fd63e7-f0a5-4fe3-abad-001c904f869b" />
+              <targetEnds>
+                <association Id="3673dbf9-4584-41b5-be95-25362c492f2b" isDerived="false" sourceEndRoleName="RelayCommand" targetEndRoleName="OpretRestaurantHandler" isLeaf="false" name="Delegate" isAbstract="false">
+                  <classMoniker Id="541fe3bd-d1d8-4500-a8c4-f929cef9f98c" LastKnownName="OpretRestaurantHandler" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7af096ca-be1f-452d-ac77-50e7b77a575c" name="RelayCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="d9d89fa2-891f-4efa-b911-c510e6f4151f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="80c60c3b-d8f2-4b1f-8c4d-ca33a499ebc8" name="OpretRestaurantHandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="78262806-c6f9-4092-9c0d-4de52499a315" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="566cd1fa-dd83-4632-a4e1-b96819548afc" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="541fe3bd-d1d8-4500-a8c4-f929cef9f98c" name="OpretRestaurantHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="085b9367-77a6-467d-a35f-fd3fd8304f5a" />
+              <targetEnds>
+                <association Id="9c7e191d-a3b8-48d5-b221-b77710dac634" isDerived="false" sourceEndRoleName="OpretRestaurantHandler" targetEndRoleName="Restaurant" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="63a314e6-2b66-4a6e-a29f-1c08dca7703e" LastKnownName="Restaurant" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="96962b64-85f7-4f85-811a-458b021fca0b" name="OpretRestaurantHandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="4b46561b-1ee0-4022-a8c0-438d3b55e437" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="586a8ab7-7cf5-4fdc-a0ad-15413825c874" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="38a648d1-cb5d-4689-a56d-5a49fec9ad58" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="076d6d3a-fcc1-4b4a-ab41-9ff145d87b5b" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="210a539e-196d-40e4-a344-bce847b7fd45" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a554600-da0e-4b78-9b7e-36e548483cf7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="ff70b0bf-9b14-48b0-9a0d-50730ada3820" name="Beskrivelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45f11d46-78e6-4003-88d1-12604d41e5d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="2ab2a323-bd61-4aab-a4c9-62e4b67e8cf6" name="Bedømmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7213e1da-9e6a-4f51-8885-64c948dcc56f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="4094294c-f5fb-4431-b685-831638f03c29" name="Telefon" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e56d5183-979a-451f-899b-740f8ac04ce4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="82cced53-4c50-4a77-ad84-9a998f2d5417" name="Hjemmeside" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5358ca9e-0ea2-4583-b4ba-af98cef45da4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="c75576cd-b3b9-4ca9-b249-e660de1d865e" name="OpretRestaurant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a54ddcc9-f975-43f4-ac45-977b4a73290a" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="0b8a1bba-b280-4067-93f6-03636b37119d" name="Model">
+        <elementDefinition Id="dbf89cbd-5173-4308-8c43-e042e1c74d5a" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="63a314e6-2b66-4a6e-a29f-1c08dca7703e" name="Restaurant" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f08cb164-e668-4a99-8f12-c7fca99c42a6" />
+              <targetEnds>
+                <association Id="bd0daa30-1b95-4d1f-915a-0767b6a69053" isDerived="false" sourceEndRoleName="Restaurant" targetEndRoleName="Kategori" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="037ae920-30ce-4ea3-99af-280edd4a0ed6" LastKnownName="Kategori" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8a1644df-a896-4d48-93ba-858cdedf0f2f" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="e5c27558-1fb7-4dae-bf44-cbb8fa58299b" name="Lower" value="*">
+                            <elementDefinition Id="2ea8ed24-c6cc-4ce6-81f5-e075e1dd15b6" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="71567bd8-65f9-476a-9e6e-3fe46121e57e" name="Upper" value="*">
+                            <elementDefinition Id="123da415-7ec9-4e53-88c7-5bcd931cf2a5" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="9a7f5797-5e83-4c6c-b2ee-b825d1222ac9" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ecdedfce-37c7-4a42-a9c4-9c043238c58d" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="7ac21fbd-fb98-4666-9a40-3867b68309b3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="422fcf64-1838-4fe9-9e8c-ada8a92cb59b" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="3a539f2f-c113-4d14-89da-8458ce03da8b" name="Hjemmeside" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d65c3a78-510f-474e-8f29-e2caf2cb9bf8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="f36ed264-d145-4d0d-863e-fa9050d367da" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2146995f-0dca-4e04-8ec2-9ce40a719c30" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="dbd3d117-aa68-408d-b559-2a4d95e19933" name="Telefon" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2a84debd-e1ab-41da-8ac3-d5c15d8988e2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="be5727fe-1e82-495e-8d27-a0038b9f0d23" name="Bedømmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e7a83410-9046-431b-82c6-7e0e38810530" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="f9c7dadc-6d00-4c0c-9896-7dbcd7b7c1b8" name="Beskrivelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0d3aa0af-ecf9-4434-9282-e32f6a40162c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="549b6d83-3813-4382-9e4c-cd757b477c53" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="037ae920-30ce-4ea3-99af-280edd4a0ed6" name="Kategori" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b685fe71-da6a-44d6-b4d2-1f4b2b025366" />
+              <ownedAttributesInternal>
+                <property Id="59b69f5b-025b-4ee4-b656-ce42f0d07646" name="KategoriNavn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a0eecdc5-e52c-433f-85d1-1fbdb7392c58" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f5bfe118-f5c3-45a2-b7f0-ab3ca5c0dab4" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="a5f105a7-e113-4427-8443-83bdac049ae9" name="ObserableCollection" isAbstract="false" isLeaf="false" cachedFullName="ObserableCollection">
+        <elementDefinition Id="8991a852-1fbe-4e9b-90ca-969c55f131be" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="549b6d83-3813-4382-9e4c-cd757b477c53" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="0b06f4e9-673e-4f68-9014-ecb23d661461" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f5bfe118-f5c3-45a2-b7f0-ab3ca5c0dab4" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="0b06f4e9-673e-4f68-9014-ecb23d661461" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="cadc5bfa-bc21-453b-bad5-12a6b9e6bfb0" name="UML">
+    <elementDefinition Id="848b43c5-995e-4a73-a925-2bb53f12c504" />
+  </package>
+</logicalClassDesignerModel>
