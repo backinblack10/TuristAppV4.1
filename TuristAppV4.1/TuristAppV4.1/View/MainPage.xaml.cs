@@ -26,5 +26,10 @@ namespace TuristAppV4._1
         {
             this.InitializeComponent();
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
