@@ -24,17 +24,16 @@
             <ImageBrush ImageSource="ms-appx:///Assets/bg.png" Stretch="Fill"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="190*"/>
-            <RowDefinition Height="577*"/>
+            <RowDefinition Height="110*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="590*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60"/>
-            <ColumnDefinition Width="415*"/>
-            <ColumnDefinition Width="415*"/>
-            <ColumnDefinition Width="415*"/>
-            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="455*"/>
+            <ColumnDefinition Width="456*"/>
+            <ColumnDefinition Width="455*"/>
         </Grid.ColumnDefinitions>
-        <GridView Margin="0 0 0 80" Grid.Column="1" Background="LightGray" Grid.Row="1">
+        <GridView Margin="50 0 0 80" Background="LightGray" Grid.Row="2">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -44,7 +43,7 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-        <GridView Margin="20 0 20 80" Background="LightGray" Grid.Column="2" Grid.Row="1">
+        <GridView Margin="20 0 20 80" Background="LightGray" Grid.Column="1" Grid.Row="2">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -54,7 +53,7 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-        <GridView Margin="0 0 0 80" Background="LightGray" Grid.Column="3" Grid.Row="1">
+        <GridView Margin="0 0 50 80" Background="LightGray" Grid.Column="2" Grid.Row="2">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -64,11 +63,11 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-        <TextBlock Height="70" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="55" Foreground="white" HorizontalAlignment="Left" Grid.Column="1">
+        <TextBlock Height="70" Margin="50,0,0,0" VerticalAlignment="Bottom" FontSize="55" Foreground="white" HorizontalAlignment="Left">
 			<Run Text="Eat Out"/>
 			<Run Text=" - "/>
 			<Run FontStyle="Italic" FontSize="45" Text="Roskilde"/>
         </TextBlock>
-        <ListView Background="white" Grid.Column="1" Height="60" Margin="0,100,0,0" Grid.ColumnSpan="3"/>
+        <ListView Background="white" Margin="50,0,50,10" Grid.ColumnSpan="3" Grid.Row="1"/>
     </Grid>
 </Page>
