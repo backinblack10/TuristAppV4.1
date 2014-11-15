@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="7c502e42-9162-4f2d-886e-3349bf41d950" name="DomainModel" linkedPackageId="ba316a49-7aa1-4e3f-88d1-cd7007367206" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c34b4bfe-f873-4335-ada7-9e6fc9713ead" name="Kategori" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c3d37594-e345-452e-8845-fd8b7ecb53d6" />
+        <targetEnds>
+          <association Id="12768b18-fe83-4d7d-873d-8c033c0ef7e7" isDerived="false" sourceEndRoleName="Kategori" targetEndRoleName="Restaurant" isLeaf="false" name="Knytter restaurant til kategori" isAbstract="false">
+            <classMoniker Id="f0102aed-a3d5-4cd6-b2e8-02cab4a80f39" LastKnownName="Restaurant" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="572822de-3717-452a-b087-24559507ebfe" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="667623ef-9e34-45b0-8b97-c79d40ccf5e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="150665b2-b651-4c78-941a-6c1efe699ffc" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="85e9d039-c12d-45b2-bdc2-efa829423f9e" name="Lower" value="*">
+                      <elementDefinition Id="4f76f183-d45d-488a-8247-c05a28ba0434" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d8366649-c662-4ec9-8265-3e33f5c6bc8c" name="Upper" value="*">
+                      <elementDefinition Id="9e81ae53-24e3-45ad-86a6-c92ae6705a75" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f69654b0-fe8f-4ed2-873f-208c6b4dd2e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="662fd17d-8cb6-412a-9e82-c84c4e5bd79e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e1977277-0caa-4bb9-84e0-f2d54f70febb" name="Kategorinavn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ae62358e-2dbe-41d5-8593-899997d7255f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f0102aed-a3d5-4cd6-b2e8-02cab4a80f39" name="Restaurant" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="03a8a938-4e20-4f9b-a72f-9ebc69940dd1" />
+        <ownedAttributesInternal>
+          <property Id="826387f1-4b8b-47f3-8434-e174d75cdd69" name="Restaurantnavn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b297bd05-8623-48b3-a535-825d540dd6f6" />
+          </property>
+          <property Id="2d46aa88-6878-4f33-9c0e-fedea6e2659e" name="Beskrivelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fac05372-d69a-4f4b-8e10-c1d927c88232" />
+          </property>
+          <property Id="92a5195a-4476-4036-8305-4d5e82ce941b" name="Telefon" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8829c6f5-9b10-419b-bbe4-b1fa3cc7fa04" />
+          </property>
+          <property Id="cc2449ba-a16d-4ca1-84d5-d2e93eb52de9" name="Hjemmeside" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c61cfa7-eca3-4217-a7fc-e695b5d025ff" />
+          </property>
+          <property Id="e1954df4-8be5-44a1-abec-f57ba3ff94e8" name="Bedømmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="111870f0-4730-4002-94d9-fbb6686452eb" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ba316a49-7aa1-4e3f-88d1-cd7007367206" name="UML">
+    <elementDefinition Id="9aac7550-e19c-4c03-bd95-4b9cebc0c498" />
+  </package>
+</logicalClassDesignerModel>
