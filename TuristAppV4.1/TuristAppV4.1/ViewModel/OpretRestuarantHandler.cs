@@ -6,6 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using TuristAppV4.Model;
+using TuristAppV4._1.ViewModel;
 
 namespace TuristAppV4.ViewModel
 {

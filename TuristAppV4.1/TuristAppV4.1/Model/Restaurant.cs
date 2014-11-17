@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TuristAppV4.Model
+namespace TuristAppV4._1.Model
 {
     class Restaurant
     {

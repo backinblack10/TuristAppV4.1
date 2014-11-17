@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:TuristAppV4.ViewModel"
+    xmlns:viewModel="using:TuristAppV4._1.ViewModel"
     x:Class="TuristAppV4._1.MainPage"
     mc:Ignorable="d">
     <Page.BottomAppBar>
@@ -16,7 +17,7 @@
     </Page.BottomAppBar>
 
     <Page.DataContext>
-        <ViewModel:MainViewModel/>
+        <viewModel:MainViewModel/>
     </Page.DataContext>
 
     <Grid>
